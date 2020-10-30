@@ -16,6 +16,11 @@ public class Ingrediente {
     @ManyToOne
     private Receita receita;
 
+    public Ingrediente(String descricao, BigDecimal quantidade) {
+        this.descricao = descricao;
+        this.quantidade = quantidade;
+    }
+
     public Receita getReceita() {
         return receita;
     }
