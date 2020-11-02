@@ -1,8 +1,11 @@
 package rbf.spring.spring5cookingapp.models;
 
+import lombok.EqualsAndHashCode;
+
 import javax.persistence.*;
 import java.util.Set;
 
+@EqualsAndHashCode
 @Entity
 public class Categoria {
 
