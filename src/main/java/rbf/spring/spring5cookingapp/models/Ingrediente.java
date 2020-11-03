@@ -21,6 +21,8 @@ public class Ingrediente {
         this.quantidade = quantidade;
     }
 
+    public Ingrediente() {}
+
     public Receita getReceita() {
         return receita;
     }

@@ -27,15 +27,15 @@ public class ReceitaBootstrap implements ApplicationListener<ContextRefreshedEve
 
     private List<Receita> getRecipes() {
         List<Receita> listaDeReceitas = new ArrayList<Receita>();
-        Receita receitaDeLasanha = new Receita();
-        receitaDeLasanha.setDescricao("Perfect Guacamole");
-        receitaDeLasanha.setTempoPreparo(10);
-        receitaDeLasanha.setTempoCozimento(0);
-        receitaDeLasanha.setDirecoes("Comprar a massa, cozinhar, adicionar molho, carne, tempero e comer");
-
-        receitaDeLasanha.getIngredientes().add(new Ingrediente("pimenta", new BigDecimal(10)));
-
-        listaDeReceitas.add(receitaDeLasanha);
+//        Receita receitaDeLasanha = new Receita();
+//        receitaDeLasanha.setDescricao("Perfect Guacamole");
+//        receitaDeLasanha.setTempoPreparo(10);
+//        receitaDeLasanha.setTempoCozimento(0);
+//        receitaDeLasanha.setDirecoes("Comprar a massa, cozinhar, adicionar molho, carne, tempero e comer");
+//
+//        receitaDeLasanha.getIngredientes().add(new Ingrediente("pimenta", new BigDecimal(10)));
+//
+//        listaDeReceitas.add(receitaDeLasanha);
 
         return listaDeReceitas;
     }
