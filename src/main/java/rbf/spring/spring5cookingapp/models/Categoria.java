@@ -1,10 +1,14 @@
 package rbf.spring.spring5cookingapp.models;
 
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Set;
 
+@Getter
+@Setter
 @EqualsAndHashCode
 @Entity
 public class Categoria {
@@ -17,20 +21,6 @@ public class Categoria {
 //    @ManyToMany(mappedBy = "categories")
 //    private Set<Receita> receitas;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
 }
