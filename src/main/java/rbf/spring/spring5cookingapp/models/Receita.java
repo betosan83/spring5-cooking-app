@@ -23,6 +23,12 @@ public class Receita {
     private String url;
     private String direcoes;
 
+    @Enumerated(value = EnumType.STRING)
+    private Dificuldade dificuldade;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Anotacoes anotacoes;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "receita")
     private Set<Ingrediente> ingredientes;
 
