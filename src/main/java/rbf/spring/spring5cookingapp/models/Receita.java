@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+
+import java.util.HashSet;
 import java.util.Set;
 
 @Getter
@@ -32,5 +34,10 @@ public class Receita {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "receita")
     private Set<Ingrediente> ingredientes;
 
+    @ManyToMany
+    @JoinTable(name = "receita_categoria",
+        joinColumns = @JoinColumn(name = "recipe_id"),
+            inverseJoinColumns = @JoinColumn(name = "category_id"))
+    private Set<Categoria> categorias = new HashSet<>();
 
 }
